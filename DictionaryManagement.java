@@ -12,15 +12,6 @@ import java.io.*;
  * @author Administrator
  */
 public class DictionaryManagement {
-//    private Dictionary dictionary;
-//    
-//    public DictionaryManagement() {
-//        dictionary = new Dictionary();
-//    }
-//    
-//    public DictionaryManagement(Dictionary d) {
-//        dictionary = d;
-//    }
 
     public static void insertFromCommandline() {
         Scanner sc = new Scanner(System.in);
