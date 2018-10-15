@@ -18,11 +18,11 @@ public class Word {
         this.word_explain = word_explain;
     }
 
-    public String getWord() {
+    public String getTarget() {
         return word_target;
     }
 
-    public void setWord(String word_target) {
+    public void setTarget(String word_target) {
         this.word_target = word_target;
     }
 

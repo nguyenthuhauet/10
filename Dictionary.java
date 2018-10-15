@@ -14,4 +14,10 @@ public class Dictionary {
 
     public static ArrayList<Word> a = new ArrayList<Word>();
 
+    ArrayList<Word> getWord() {
+        return this.a;
+    }
+
+    
+
 }
