@@ -96,6 +96,7 @@ public class DictionaryManagement {
         for (int i = 0; i < Dictionary.a.size(); i++) {
             if (wordDel.equals(dictionary.a.get(i).getTarget())) {
                 getA().remove(new Word(wordDel, getA().get(i).getExplain()));
+                System.out.println("Successfully!");
                 return;
             }
 

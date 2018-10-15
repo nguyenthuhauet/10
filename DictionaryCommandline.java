@@ -68,10 +68,10 @@ public class DictionaryCommandline {
         for (int i = 0; i < List.size(); i++) {
             if (List.get(i).getTarget().startsWith(wordSearch)) {
                 System.out.println(List.get(i).getTarget() + "\t" + List.get(i).getExplain());
-                
+                return;
             }
         }
-       
+        System.out.println("No result!");
 
     }
 }
