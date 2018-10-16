@@ -44,7 +44,7 @@ public class DictionaryManagement {
     public void insertFromFile() throws IOException {
 
         try {
-            FileReader fr = new FileReader("C:\\Users\\Administrator\\Desktop\\OOP\\Main\\src\\dictionaries\\dictionaries.txt");
+            FileReader fr = new FileReader("dictionaries.txt");
 
             BufferedReader br = new BufferedReader(fr);
 
@@ -59,6 +59,7 @@ public class DictionaryManagement {
             br.close();
         } catch (IOException e) {
             e.printStackTrace();
+
         }
 
     }
@@ -121,9 +122,9 @@ public class DictionaryManagement {
 
     public void dictionaryExportToFile() {
         try {
-            FileWriter fw = new FileWriter("C:\\Users\\Administrator\\Desktop\\OOP\\Main\\src\\export\\export.txt");
+            FileWriter fw = new FileWriter("export.txt");
             BufferedWriter bw = new BufferedWriter(fw);
-          
+
             for (int i = 0; i < getA().size(); i++) {
                 bw.write(getA().get(i).getTarget() + "\t" + getA().get(i).getExplain());
                 bw.newLine();
