@@ -6,7 +6,6 @@ import java.io.IOException;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author Administrator
@@ -19,10 +18,9 @@ public class Main {
     public static void main(String[] args) throws IOException {
         // TODO code application logic here
         DictionaryCommandline dictionaryCmd = new DictionaryCommandline();
-        
+
         dictionaryCmd.dictionaryAdvanced();
         dictionaryCmd.dictionarySeacher();
-        
 
     }
 

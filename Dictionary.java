@@ -18,6 +18,4 @@ public class Dictionary {
         return this.a;
     }
 
-    
-
 }
