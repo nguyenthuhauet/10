@@ -1,3 +1,5 @@
+package main;
+
 
 import java.io.*;
 import java.util.*;
@@ -36,8 +38,10 @@ public class DictionaryCommandline {
     }
 
     public void dictionaryAdvanced() throws IOException {
+        //String wordLookup = null, wordTarget = null, wordExplain = null, wordDel = null;
         dictionaryMana.insertFromFile();
         showAllWords();
+       
         dictionaryMana.dictionaryLookup();
         System.out.println("Enter the number to:\n\t1.Delete word.\n\t2.Add word."
                 + "\n\t3.Edit word.");
@@ -56,21 +60,20 @@ public class DictionaryCommandline {
             dictionaryMana.editWord();
             return;
         }
-        dictionaryMana.dictionaryExportToFile();
+         dictionaryMana.dictionaryExportToFile();
 
     }
 
     public void dictionarySeacher() {
         ArrayList<Word> List = dictionaryMana.getA();
-        System.out.println("Search word : ");
+        System.out.println("Nhập từ cần tìm kiếm : ");
         Scanner sc = new Scanner(System.in);
-        String wordSearch = sc.nextLine();
-        for (int i = 0; i < List.size(); i++) {
-            if (List.get(i).getTarget().startsWith(wordSearch)) {
+        String wordSeach = sc.nextLine();
+        for (int i = 0; i<List.size();i++) {
+            if(List.get(i).getTarget().startsWith(wordSeach)) {
+      
                 System.out.println(List.get(i).getTarget() + "\t" + List.get(i).getExplain());
-
             }
         }
-
     }
 }
